@@ -24,14 +24,14 @@ npx prisma migrate dev
 npx prisma generate
 ฐานข้อมูล SQLite จะถูกสร้างที่ `servers/prisma/dev.db`
 npm run dev
-เซิร์ฟเวอร์ทำงานที่ `http://localhost:5000`
+URL `http://localhost:5000`
 
 3. รัน Frontend
 
 cd client
 npm run dev
 
-เปิดเบราว์เซอร์ที่ `http://localhost:5173`
+URL `http://localhost:5173`
 
 
 ค่าที่รองรับ: `MANAGER` | `TEAMLEADER` | `FLOORSTAFF`
