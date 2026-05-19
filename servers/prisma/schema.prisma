@@ -1,0 +1,17 @@
+// server/prisma/schema.prisma
+
+datasource db {
+  provider = "sqlite"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Movie {
+  id        Int      @id @default(autoincrement())
+  title     String
+  year      Int
+  rating    String   // G, PG, M, MA, R
+  createdAt DateTime @default(now())
+}
